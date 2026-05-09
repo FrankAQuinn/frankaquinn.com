@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Frank A. Quinn — Quinn Alliance</title>
+  <meta name="description" content="Frank A. Quinn — founder of Quinn Alliance, a commercial lines specialty P&amp;C and consulting firm. Georgia commercial lines producer, Associate Broker at Wynd Realty, and the licensed depth behind a tech-forward independent practice." />
+  <meta name="theme-color" content="#14110d" />
+  <meta property="og:title" content="Frank A. Quinn — A practice in risk, valuation, and the firm that wrote the tools." />
+  <meta property="og:description" content="Strategy, placement, and stewardship — anchored at Quinn Alliance. Atlanta · Georgia." />
+  <meta property="og:type" content="profile" />
+  <meta property="og:url" content="https://frankaquinn.com" />
+  <link rel="canonical" href="https://frankaquinn.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,0..100;1,9..144,300..900,0..100&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root{
+      --paper:#f7f3ec;
+      --paper-deep:#efe9de;
+      --ink:#14110d;
+      --ink-soft:#403a31;
+      --rule:#1a1a1a;
+      --oxblood:#7a1f24;
+      --gold:#e7c574;
+      --bronze:#8b6f3a;
+      --max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;background:var(--paper);color:var(--ink);
+      font-family:'Inter',system-ui,-apple-system,Segoe UI,sans-serif;
+      font-size:17px;line-height:1.6;
+      -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+    }
+    a{color:inherit}
+    img{max-width:100%;display:block}
+    ::selection{background:var(--oxblood);color:var(--paper)}
+
+    .top-rule{height:6px;background:var(--ink)}
+    .nav{
+      position:sticky;top:0;z-index:50;
+      background:rgba(247,243,236,.85);
+      backdrop-filter:saturate(140%) blur(10px);
+      -webkit-backdrop-filter:saturate(140%) blur(10px);
+      border-bottom:1px solid rgba(20,17,13,.08);
+    }
+    .nav-inner{
+      max-width:var(--max);margin:0 auto;
+      display:flex;align-items:center;justify-content:space-between;
+      padding:14px 28px;
+    }
+    .mono{
+      font-family:'Fraunces',Georgia,serif;
+      font-weight:600;letter-spacing:.02em;
+      font-size:20px;text-decoration:none;color:var(--ink);
+    }
+    .mono em{font-style:italic;color:var(--oxblood);font-weight:500}
+    .nav ul{
+      list-style:none;display:flex;gap:28px;margin:0;padding:0;
+      font-size:13px;letter-spacing:.18em;text-transform:uppercase;font-weight:500;
+    }
+    .nav a{text-decoration:none;color:var(--ink-soft);transition:color .2s}
+    .nav a:hover{color:var(--oxblood)}
+    @media (max-width:820px){.nav ul{display:none}}
+
+    .masthead{
+      max-width:var(--max);margin:0 auto;padding:36px 28px 8px;
+      border-bottom:1px solid var(--rule);
+    }
+    .masthead-row{
+      display:flex;justify-content:space-between;align-items:flex-end;
+      font-family:'Fraunces',Georgia,serif;
+      font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);
+    }
+    .masthead h1{
+      font-family:'Fraunces',Georgia,serif;
+      font-weight:600;
+      font-variation-settings:"opsz" 144,"SOFT" 30;
+      font-size:clamp(56px,11vw,168px);
+      line-height:.92;letter-spacing:-0.025em;
+      margin:18px 0 6px;color:var(--ink);
+    }
+    .masthead h1 em{font-style:italic;font-weight:400;color:var(--oxblood)}
+    .deck{
+      font-family:'Fraunces',Georgia,serif;
+      font-style:italic;font-weight:300;
+      font-size:clamp(20px,2.4vw,28px);
+      color:var(--ink-soft);max-width:64ch;margin:8px 0 28px;
+    }
+
+    .hero{
+      max-width:var(--max);margin:0 auto;padding:48px 28px 64px;
+      display:grid;grid-template-columns:1.35fr 1fr;gap:56px;
+      border-bottom:1px solid var(--rule);
+    }
+    @media (max-width:880px){.hero{grid-template-columns:1fr;gap:36px;padding:36px 28px 48px}}
+    .lede p{
+      font-family:'Fraunces',Georgia,serif;
+      font-size:clamp(19px,1.5vw,22px);
+      line-height:1.55;color:var(--ink);margin:0 0 18px;
+    }
+    .lede p:first-child::first-letter{
+      font-family:'Fraunces',Georgia,serif;
+      font-weight:700;float:left;font-size:6.2em;line-height:.85;
+      padding:.05em .12em 0 0;color:var(--oxblood);
+      font-variation-settings:"opsz" 144;
+    }
+    .pull{
+      border-left:3px solid var(--oxblood);
+      padding:6px 0 6px 22px;margin:28px 0;
+      font-family:'Fraunces',Georgia,serif;font-style:italic;
+      font-size:clamp(20px,2vw,26px);line-height:1.35;color:var(--ink);
+    }
+    .portrait{position:relative}
+    .portrait .frame{
+      aspect-ratio:4/5;width:100%;
+      background:var(--paper-deep) url('assets/headshot.jpg') center/cover no-repeat;
+      filter:contrast(1.02) saturate(.95);
+      box-shadow:0 1px 0 rgba(0,0,0,.06), 0 30px 60px -30px rgba(20,17,13,.35);
+    }
+    .portrait .placeholder{
+      position:absolute;inset:0;display:grid;place-items:center;
+      font-family:'Fraunces',Georgia,serif;font-style:italic;
+      color:var(--ink-soft);text-align:center;padding:24px;pointer-events:none;
+    }
+    .portrait:has(.frame[data-loaded="true"]) .placeholder{display:none}
+    .caption{
+      font-family:'Fraunces',Georgia,serif;font-style:italic;
+      font-size:14px;color:var(--ink-soft);margin-top:14px;letter-spacing:.02em;
+    }
+
+    section{scroll-margin-top:80px}
+    .section{
+      max-width:var(--max);margin:0 auto;padding:80px 28px;
+      border-bottom:1px solid var(--rule);
+    }
+    @media (max-width:720px){.section{padding:56px 28px}}
+    .kicker{
+      font-family:'Fraunces',Georgia,serif;
+      letter-spacing:.22em;text-transform:uppercase;
+      font-size:12px;color:var(--oxblood);font-weight:600;
+      display:flex;align-items:center;gap:14px;margin-bottom:18px;
+    }
+    .kicker::before{content:"";width:36px;height:1px;background:var(--oxblood)}
+    .h2{
+      font-family:'Fraunces',Georgia,serif;font-weight:500;
+      font-variation-settings:"opsz" 144;
+      font-size:clamp(36px,5vw,64px);line-height:1.02;letter-spacing:-0.02em;
+      margin:0 0 12px;
+    }
+    .h2 em{font-style:italic;color:var(--oxblood)}
+    .lead{
+      font-family:'Fraunces',Georgia,serif;
+      font-size:clamp(18px,1.6vw,22px);
+      color:var(--ink-soft);max-width:62ch;margin:0 0 36px;
+    }
+
+    .practices{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--rule)}
+    @media (max-width:760px){.practices{grid-template-columns:1fr}}
+    .practice{
+      padding:36px 32px 40px;
+      border-bottom:1px solid var(--rule);
+      border-right:1px solid rgba(20,17,13,.14);
+      transition:background .25s ease;
+      display:flex;flex-direction:column;
+      text-decoration:none;color:inherit;position:relative;
+    }
+    .practices .practice:nth-child(2n){border-right:none}
+    @media (max-width:760px){.practices .practice{border-right:none}}
+    .practice:hover{background:var(--paper-deep)}
+    .practice .num{
+      font-family:'Fraunces',Georgia,serif;font-style:italic;color:var(--oxblood);
+      font-size:14px;letter-spacing:.05em;margin-bottom:6px;
+    }
+    .practice .role{
+      font-family:'Fraunces',Georgia,serif;font-style:italic;color:var(--ink-soft);
+      font-size:14px;letter-spacing:.04em;margin-bottom:8px;text-transform:uppercase;
+    }
+    .practice h3{
+      font-family:'Fraunces',Georgia,serif;font-weight:500;
+      font-size:30px;line-height:1.1;margin:4px 0 14px;letter-spacing:-0.01em;
+    }
+    .practice p{margin:0 0 22px;color:var(--ink-soft);font-size:16px;flex:1}
+    .practice .go{
+      font-family:'Inter',sans-serif;font-size:12px;letter-spacing:.2em;text-transform:uppercase;
+      font-weight:600;color:var(--oxblood);
+      display:inline-flex;align-items:center;gap:8px;transition:gap .2s ease;
+    }
+    .practice:hover .go{gap:14px}
+
+    .tools{background:var(--ink);color:var(--paper);margin:0;padding:0;border:none}
+    .tools .inner{
+      max-width:var(--max);margin:0 auto;padding:88px 28px;
+      display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;
+    }
+    @media (max-width:880px){.tools .inner{grid-template-columns:1fr;padding:64px 28px;gap:36px}}
+    .tools .kicker{color:var(--gold)}
+    .tools .kicker::before{background:var(--gold)}
+    .tools h2{
+      font-family:'Fraunces',Georgia,serif;font-weight:500;
+      font-size:clamp(36px,5vw,60px);line-height:1.02;letter-spacing:-0.02em;
+      margin:0 0 18px;color:var(--paper);
+    }
+    .tools h2 em{font-style:italic;color:var(--gold)}
+    .tools p{color:#cdc6b9;font-size:18px;max-width:54ch;margin:0 0 16px}
+    .tools .cta-row{margin-top:24px;display:flex;flex-wrap:wrap;gap:14px}
+    .btn{
+      display:inline-flex;align-items:center;gap:10px;
+      padding:14px 22px;border-radius:2px;
+      font-size:13px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;
+      text-decoration:none;transition:transform .18s ease, background .2s ease, color .2s ease;
+    }
+    .btn-primary{background:var(--gold);color:#14110d}
+    .btn-primary:hover{transform:translateY(-1px);background:#f3d489}
+    .btn-ghost{border:1px solid rgba(231,197,116,.5);color:var(--gold)}
+    .btn-ghost:hover{background:rgba(231,197,116,.1)}
+    .feature-list{
+      display:flex;flex-direction:column;gap:0;
+      border-top:1px solid rgba(231,197,116,.25);
+    }
+    .feature{
+      display:grid;grid-template-columns:auto 1fr;gap:20px;
+      padding:22px 0;border-bottom:1px solid rgba(231,197,116,.25);align-items:start;
+    }
+    .feature .num{
+      font-family:'Fraunces',Georgia,serif;font-style:italic;color:var(--gold);
+      font-size:14px;letter-spacing:.04em;
+    }
+    .feature h4{
+      font-family:'Fraunces',Georgia,serif;font-weight:500;
+      font-size:22px;line-height:1.2;margin:0 0 6px;color:var(--paper);
+      letter-spacing:-0.01em;
+    }
+    .feature .status{
+      display:inline-block;font-family:'Inter',sans-serif;font-style:normal;
+      font-size:10px;letter-spacing:.22em;text-transform:uppercase;
+      padding:3px 8px;border-radius:2px;margin-left:8px;vertical-align:middle;
+      font-weight:600;
+    }
+    .feature .status.live{background:var(--gold);color:#14110d}
+    .feature .status.coming{border:1px solid rgba(231,197,116,.5);color:var(--gold)}
+    .feature p{margin:0;font-size:15.5px;color:#bfb8aa}
+
+    .mission .grid{display:grid;grid-template-columns:1fr 1.2fr;gap:64px;align-items:start}
+    @media (max-width:880px){.mission .grid{grid-template-columns:1fr;gap:32px}}
+    .mission .pull-side{
+      font-family:'Fraunces',Georgia,serif;font-style:italic;
+      font-size:clamp(22px,2.2vw,30px);line-height:1.3;color:var(--ink);
+      max-width:24ch;border-left:3px solid var(--oxblood);padding-left:22px;
+    }
+    .bio-list{
+      display:grid;grid-template-columns:1fr 1fr;gap:0;
+      border-top:1px solid rgba(20,17,13,.18);
+    }
+    @media (max-width:560px){.bio-list{grid-template-columns:1fr}}
+    .bio-item{
+      padding:18px 18px 18px 0;
+      border-bottom:1px solid rgba(20,17,13,.18);
+      border-right:1px solid rgba(20,17,13,.14);
+    }
+    .bio-list .bio-item:nth-child(2n){border-right:none;padding-left:18px}
+    @media (max-width:560px){.bio-list .bio-item{border-right:none;padding-left:0}}
+    .bio-item .lbl{
+      font-family:'Fraunces',Georgia,serif;font-style:italic;
+      color:var(--oxblood);font-size:13px;letter-spacing:.04em;
+      text-transform:uppercase;margin-bottom:4px;
+    }
+    .bio-item .v{font-size:16px;color:var(--ink)}
+
+    .creds{display:grid;grid-template-columns:1fr 1.4fr;gap:48px;align-items:start}
+    @media (max-width:880px){.creds{grid-template-columns:1fr;gap:32px}}
+    .cred-row{
+      display:grid;grid-template-columns:160px 1fr;gap:22px;
+      padding:18px 0;border-top:1px solid rgba(20,17,13,.18);align-items:baseline;
+    }
+    .cred-row:last-child{border-bottom:1px solid rgba(20,17,13,.18)}
+    .cred-row dt{
+      font-family:'Fraunces',Georgia,serif;font-style:italic;color:var(--oxblood);
+      font-size:14px;letter-spacing:.04em;text-transform:uppercase;margin:0;
+    }
+    .cred-row dd{margin:0;font-size:17px;color:var(--ink);font-variant-numeric:tabular-nums}
+    .cred-row dd strong{font-weight:600}
+    .cred-row dd .verify{
+      display:inline-block;font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+      color:var(--oxblood);margin-left:10px;text-decoration:none;border-bottom:1px solid var(--oxblood);
+      padding-bottom:1px;
+    }
+    .cred-row dd .verify:hover{color:var(--ink);border-color:var(--ink)}
+    .badge-strip{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+    .badge{
+      font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+      padding:8px 12px;border:1px solid var(--rule);border-radius:2px;
+      color:var(--ink);background:transparent;font-weight:500;
+    }
+
+    .connect-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:56px;align-items:start}
+    @media (max-width:880px){.connect-grid{grid-template-columns:1fr;gap:32px}}
+    .channel{
+      display:grid;grid-template-columns:140px 1fr auto;gap:18px;
+      padding:18px 0;border-top:1px solid rgba(20,17,13,.18);align-items:center;
+    }
+    .channel:last-child{border-bottom:1px solid rgba(20,17,13,.18)}
+    .channel .label{
+      font-family:'Fraunces',Georgia,serif;font-style:italic;color:var(--oxblood);
+      font-size:14px;letter-spacing:.04em;text-transform:uppercase;
+    }
+    .channel a{
+      text-decoration:none;color:var(--ink);
+      border-bottom:1px solid transparent;transition:border-color .2s, color .2s;
+      font-size:18px;
+    }
+    .channel a:hover{color:var(--oxblood);border-bottom-color:var(--oxblood)}
+    .channel .arrow{font-family:'Fraunces',Georgia,serif;font-style:italic;color:var(--ink-soft)}
+
+    .invite{background:var(--paper-deep);padding:36px 32px;border-left:3px solid var(--oxblood)}
+    .invite h3{
+      font-family:'Fraunces',Georgia,serif;font-weight:500;
+      font-size:30px;line-height:1.15;margin:0 0 12px;letter-spacing:-0.01em;
+    }
+    .invite p{margin:0 0 22px;color:var(--ink-soft)}
+    .invite .btn{background:var(--ink);color:var(--paper)}
+    .invite .btn:hover{background:var(--oxblood)}
+
+    footer{
+      max-width:var(--max);margin:0 auto;padding:48px 28px 64px;
+      display:flex;justify-content:space-between;flex-wrap:wrap;gap:18px;
+      font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);
+    }
+    footer .marque{
+      font-family:'Fraunces',Georgia,serif;font-style:italic;
+      text-transform:none;letter-spacing:.02em;font-size:14px;
+    }
+
+    /* Disclosures */
+    .disclosures{
+      background:var(--paper-deep);
+      border-bottom:1px solid var(--rule);
+    }
+    .disclosures-inner{
+      max-width:var(--max);margin:0 auto;padding:56px 28px;
+    }
+    .disclosures h3{
+      font-family:'Fraunces',Georgia,serif;font-weight:500;
+      font-size:18px;letter-spacing:.02em;margin:0 0 18px;
+      color:var(--ink);
+    }
+    .disclosures .kicker{margin-bottom:14px}
+    .disclosures p,.disclosures li{
+      font-family:'Fraunces',Georgia,serif;
+      font-size:13.5px;line-height:1.65;color:var(--ink-soft);
+      margin:0 0 12px;
+    }
+    .disclosures ul{padding-left:18px;margin:0 0 14px}
+    .disclosures .eho{
+      display:inline-block;border:1px solid var(--ink);
+      padding:3px 9px;font-family:'Inter',sans-serif;font-size:10px;
+      letter-spacing:.18em;text-transform:uppercase;color:var(--ink);
+      margin-right:8px;font-weight:600;
+    }
+
+    .reveal{opacity:0;transform:translateY(14px);transition:opacity .8s ease, transform .8s ease}
+    .reveal.in{opacity:1;transform:none}
+    @media (prefers-reduced-motion:reduce){
+      .reveal{opacity:1;transform:none;transition:none}
+      html{scroll-behavior:auto}
+    }
+  </style>
+</head>
+<body>
+  <div class="top-rule" aria-hidden="true"></div>
+
+  <nav class="nav" aria-label="Primary">
+    <div class="nav-inner">
+      <a href="#top" class="mono" aria-label="Frank A. Quinn — home">Frank A. Quinn<em>.</em></a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#practices">Practices</a></li>
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#credentials">Credentials</a></li>
+        <li><a href="#connect">Connect</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <a id="top"></a>
+  <header class="masthead">
+    <div class="masthead-row">
+      <span>Atlanta, Georgia</span>
+      <span>Insurance · Valuation · Real Estate</span>
+    </div>
+    <h1>Frank A. <em>Quinn</em></h1>
+    <p class="deck">Founder of Quinn Alliance — a commercial lines specialty P&amp;C and consulting firm for the businesses, contractors, and investors who take their risk seriously.</p>
+  </header>
+
+  <section class="hero" id="about">
+    <div class="lede reveal">
+      <p>My heart is in helping businesses identify the risks they actually carry, and the coverages that actually transfer them — reducing upfront cost while safeguarding the company from the long-term exposures that quietly take operators down. The path to that work has been deliberate: an accounting degree, more than a decade in insurance underwriting, a Commercial Lending certification from the American Bankers Association, and graduate study in Corporate Finance at Boston University. The path was also hands-on — residential construction trades and construction management studies, which is where I first learned that paper risk and field risk are not the same thing.</p>
+      <p>Today the practice centers on Quinn Alliance — a commercial lines specialty P&amp;C and consulting firm — supported by an Associate Broker desk at Wynd Realty in Georgia and a depth of multi-state insurance and adjusting licensure paired with direct experience in government real property appraisal. That mix means I read claims, valuations, and underwriting files from the inside. The shared premise is simple: buyers are best served by an advisor who understands the balance sheet, the jobsite, and the policy form — not just the quote.</p>
+      <blockquote class="pull">"The cheapest premium is the one you wouldn't dare collect on. The right one is the program you forget you have until the day it carries the company."</blockquote>
+    </div>
+    <aside class="portrait reveal" aria-label="Portrait">
+      <div class="frame" id="frame" role="img" aria-label="Portrait of Frank A. Quinn"></div>
+      <div class="placeholder">Portrait forthcoming.<br/>Place <code>headshot.jpg</code> in <code>/assets</code>.</div>
+      <p class="caption">Frank A. Quinn, photographed in Atlanta.</p>
+    </aside>
+  </section>
+
+  <!-- Background & Bench -->
+  <section class="section mission">
+    <div class="reveal">
+      <div class="kicker">Background &amp; Bench</div>
+      <h2 class="h2">Built from <em>both ends</em> of the deal.</h2>
+      <p class="lead">Underwriters know risk in the abstract. Tradespeople know it in the dirt. The producers who serve businesses best have lived in both worlds — and that is the bench this practice was built on.</p>
+    </div>
+    <div class="grid">
+      <div class="reveal">
+        <p class="pull-side">Finance, underwriting, valuation, and trades — assembled into one advisor.</p>
+      </div>
+      <div class="bio-list reveal">
+        <div class="bio-item"><div class="lbl">Education</div><div class="v">Accounting degree · Boston University Graduate Program in Corporate Finance</div></div>
+        <div class="bio-item"><div class="lbl">Certification</div><div class="v">American Bankers Association — Commercial Lending</div></div>
+        <div class="bio-item"><div class="lbl">Experience</div><div class="v">10+ years in insurance underwriting · multi-state adjusting licensure</div></div>
+        <div class="bio-item"><div class="lbl">Valuation</div><div class="v">Direct experience in government real property appraisal</div></div>
+        <div class="bio-item"><div class="lbl">Trades</div><div class="v">Residential construction · Construction management studies</div></div>
+        <div class="bio-item"><div class="lbl">Geography</div><div class="v">Atlanta, Georgia · licensed in Florida</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Practices grid -->
+  <section class="section" id="practices" style="padding-bottom:0">
+    <div class="reveal">
+      <div class="kicker">The Houses</div>
+      <h2 class="h2">Where the work <em>actually happens.</em></h2>
+      <p class="lead">Four practices, one operator. Each route below opens to the right home for the conversation. If a destination has no public site yet, the link writes me directly.</p>
+    </div>
+    <div class="practices">
+
+      <a class="practice reveal" href="https://quinnalliance.com" target="_blank" rel="noopener">
+        <div class="num">— 01</div>
+        <div class="role">Founder · Producer</div>
+        <h3>Quinn Alliance</h3>
+        <p>A commercial lines specialty P&amp;C and consulting firm. Property &amp; casualty, commercial auto, workers' comp, professional, and surplus lines for contractors, fleets, real estate operators, and manufacturers in Georgia — backed by proprietary client tools no other firm I know of is running.</p>
+        <span class="go">Visit quinnalliance.com →</span>
+      </a>
+
+      <a class="practice reveal" href="https://wyndrealty.com/agent-directory/" target="_blank" rel="noopener">
+        <div class="num">— 02</div>
+        <div class="role">Associate Broker · Georgia</div>
+        <h3>Wynd Realty</h3>
+        <p>A large independent brokerage with a deep agent bench; my desk routes investor and owner-occupant business across metro Atlanta. The advantage to clients: an accountant's read on the deal, an underwriter's instinct on the financing, and a contractor's eye on the property — purpose-built for real estate investors who need execution at scale. Referrals welcomed from any source.</p>
+        <span class="go">Open the Wynd directory →</span>
+      </a>
+
+      <a class="practice reveal" href="mailto:frank@frankaquinn.com?subject=BPO%20%2F%20CMA%20—%20Lender%20Valuation%20Inquiry">
+        <div class="num">— 03</div>
+        <div class="role">Lender Valuation Services</div>
+        <h3>BPO &amp; CMA — for Valuation Teams, not BPO Shops.</h3>
+        <p>Broker price opinions and comparative market analyses prepared for in-house lender valuation desks. Underwriting-grade reasoning, defensible comps, and a producer who can answer questions about the file. Backed by direct experience in government real property appraisal — valuation reasoning that holds up beyond a comp sheet.</p>
+        <span class="go">Open a valuation engagement →</span>
+      </a>
+
+      <a class="practice reveal" href="mailto:frank@frankaquinn.com?subject=Inspection%20Engagement%20Inquiry">
+        <div class="num">— 04</div>
+        <div class="role">Insurance &amp; Lender Inspections · GA + FL</div>
+        <h3>Inspections from a construction-management seat — with a risk manager's eye.</h3>
+        <p>Insurance and lender inspection engagements — including pre-bind property surveys, replacement-cost confirmations, and lender collateral inspections. Home inspections, where offered, are limited to Georgia. Florida specialty inspections that require statutorily qualified inspectors (4-point and wind-mitigation forms) are coordinated through state-credentialed affiliates. Hundreds of residential and commercial inspections in the file, approached as a risk-management advocacy: real-life experience handling property claims and reasoning through cause of loss and proximate cause sharpens what to document; direct government real property appraisal experience brings a public-sector valuation lens to inspection work; and the accounting, auditing, and underwriting discipline behind it keeps financial risk and property risk on the same page. From financial risk to property risk, I have helped mitigate exposure across each of those channels — and watched, first-hand, the damage to operators who weren't ready. Not a substitute for a USPAP appraisal where one is required. A network of professional contacts on call when scope warrants it. Built for in-house valuation and underwriting desks that want defensible work product, not the cheapest order on the board.</p>
+        <span class="go">Order an inspection →</span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- Proprietary tools / SaaS feature -->
+  <section class="tools" id="tools">
+    <div class="inner">
+      <div class="reveal">
+        <div class="kicker">Proprietary Tools</div>
+        <h2>Tools we built — <em>because no one else would.</em></h2>
+        <p>Quinn Alliance is the only firm I know of running proprietary software for the trades and contractors it insures. Working tools, in production, free to clients — built into the firm's <em>Command Center</em>.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://quinnalliance.com/command-center" target="_blank" rel="noopener">See the Quinn Alliance Command Center →</a>
+          <a class="btn btn-ghost" href="https://quinnalliance.com/risk-assessment" target="_blank" rel="noopener">Get a Free Risk Analysis Review →</a>
+        </div>
+      </div>
+      <div class="feature-list reveal" aria-label="Tools">
+
+        <div class="feature">
+          <div class="num">— 01</div>
+          <div>
+            <h4>Georgia Permit Lookup<span class="status live">Live</span></h4>
+            <p>Built in-house. In production for tree service companies — answering, in real time, whether a job needs a permit and from which jurisdiction. Proving to be a game-changer for tree service companies in the metro Atlanta area.</p>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="num">— 02</div>
+          <div>
+            <h4>COI Storage + Gap &amp; Renewal Alerts<span class="status live">Live</span></h4>
+            <p>The tech-forward platform puts clients at ease — easy COI requesting from subs, coverage-gap analysis that would otherwise slip through, and alerts on certificates approaching renewal. Faster than any competing back-office process I've seen — and the time it gives back to a GC is time better spent for the GC.</p>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="num">— 03</div>
+          <div>
+            <h4>Roofing Weather Event Identifier<span class="status coming">Coming Soon</span></h4>
+            <p>A roofing inspector's companion: enter the inspection address, get the most recent significant weather event tied to that location. Built for legitimate claim viability. Free to clients on launch.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Credentials -->
+  <section class="section" id="credentials">
+    <div class="reveal">
+      <div class="kicker">Licensing &amp; Standing</div>
+      <h2 class="h2">Credentials, <em>on the record.</em></h2>
+      <p class="lead">Active licenses and authorities — verifiable through the Georgia Office of Insurance and Safety Fire Commissioner, the Florida DBPR, and the NAIC's national producer database.</p>
+    </div>
+    <div class="creds">
+      <dl class="cred-list reveal">
+        <div class="cred-row"><dt>GA Insurance</dt><dd><strong>P&amp;C Agent · Adjuster · Public Adjuster</strong> · License No. 3584949 <a class="verify" href="https://oci.georgia.gov/licensee-lookup" target="_blank" rel="noopener">Verify</a></dd></div>
+        <div class="cred-row"><dt>NPN</dt><dd>National Producer Number <strong>20590121</strong> <a class="verify" href="https://nipr.com/help/look-up-your-npn" target="_blank" rel="noopener">Look up</a></dd></div>
+        <div class="cred-row"><dt>Lines of Authority</dt><dd>Property · Casualty · Personal Lines · Surplus Lines</dd></div>
+        <div class="cred-row"><dt>IA · Other States</dt><dd><strong>Florida</strong> W949451 · <strong>Texas</strong> 2955794 · <strong>New York</strong> IA-1774928</dd></div>
+        <div class="cred-row"><dt>Appraisal Experience</dt><dd>Direct experience in <strong>government real property appraisal</strong> · Georgia (not a state-licensed fee appraiser)</dd></div>
+        <div class="cred-row"><dt>GA Real Estate</dt><dd><strong>Broker</strong> · License No. 391429</dd></div>
+        <div class="cred-row"><dt>FL Real Estate</dt><dd><strong>Sales Agent</strong> · License No. SL3245200</dd></div>
+        <div class="cred-row"><dt>Certification</dt><dd>American Bankers Association — Commercial Lending</dd></div>
+        <div class="cred-row"><dt>Graduate Study</dt><dd>Boston University — Corporate Finance</dd></div>
+        <div class="cred-row"><dt>Agency</dt><dd><strong>Quinn Alliance LLC</strong> · GA Agency License No. 244699 · Agency NPN 22134534</dd></div>
+      </dl>
+      <div class="reveal">
+        <p style="font-family:'Fraunces',Georgia,serif;font-size:20px;line-height:1.55;color:var(--ink);margin-top:0">A license is a baseline, not a finish line. The work that earns trust comes after — coverage analysis, policy form review, claim advocacy, valuation defense, and the steady habit of returning calls before the question gets old.</p>
+        <div class="badge-strip" aria-label="Practice tags">
+          <span class="badge">Commercial Lines</span>
+          <span class="badge">Surplus Lines</span>
+          <span class="badge">Risk Management</span>
+          <span class="badge">Workers' Comp</span>
+          <span class="badge">Cyber</span>
+          <span class="badge">Bonds</span>
+          <span class="badge">Government Appraisal Exp.</span>
+          <span class="badge">Real Estate</span>
+          <span class="badge">BPO &amp; CMA</span>
+          <span class="badge">Inspections</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Connect -->
+  <section class="section" id="connect">
+    <div class="reveal">
+      <div class="kicker">The Open Line</div>
+      <h2 class="h2">Talk to <em>Frank.</em></h2>
+      <p class="lead">The fastest answers come by phone. New accounts, renewals, valuation engagements, second opinions — all welcome.</p>
+    </div>
+    <div class="connect-grid">
+      <dl class="channels reveal" style="margin:0">
+        <div class="channel"><span class="label">Direct Line</span><a href="tel:+17707387400">770&nbsp;·&nbsp;738&nbsp;·&nbsp;7400</a><span class="arrow">→</span></div>
+        <div class="channel"><span class="label">Personal</span><a href="mailto:frank@frankaquinn.com">frank@frankaquinn.com</a><span class="arrow">→</span></div>
+        <div class="channel"><span class="label">Insurance</span><a href="mailto:frank@quinnalliance.com">frank@quinnalliance.com</a><span class="arrow">→</span></div>
+        <div class="channel"><span class="label">LinkedIn</span><a href="https://linkedin.com/in/faquinn" target="_blank" rel="noopener">linkedin.com/in/faquinn</a><span class="arrow">→</span></div>
+        <div class="channel"><span class="label">Office</span><a href="#">Atlanta · by appointment</a><span class="arrow">→</span></div>
+      </dl>
+      <aside class="invite reveal" aria-label="Schedule a conversation">
+        <h3>Start a working conversation.</h3>
+        <p>Twenty minutes is usually enough to know whether I'm the right advisor for your file. Send the dec page, the listing, the inspection order, or the question — and we'll go from there.</p>
+        <a class="btn" href="mailto:frank@frankaquinn.com?subject=Working%20conversation%20—%20frankaquinn.com">Write to Frank →</a>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Disclosures -->
+  <section class="disclosures" id="disclosures" aria-labelledby="disclosures-h">
+    <div class="disclosures-inner reveal">
+      <div class="kicker">Disclosures &amp; Licensing</div>
+      <h3 id="disclosures-h">Important notices governing the services described on this site.</h3>
+
+      <p><strong>Informational purpose.</strong> This website is the personal information page of Frank A. Quinn and is provided for general informational purposes only. Nothing on this site constitutes an offer to sell or solicit insurance, a binder of coverage, a promise of any specific premium or claim outcome, a contract, a warranty, or legal, tax, accounting, financial, or investment advice. Coverage availability, terms, conditions, exclusions, and pricing are subject to underwriting and the language of any policy ultimately issued.</p>
+
+      <p><strong>Entity structure &amp; affiliations.</strong> This site is the personal page of Frank A. Quinn and lists distinct services performed through distinct licensed entities. <strong>Quinn Alliance</strong> is the trade name of <strong>Quinn Alliance LLC</strong> (Georgia entity; Georgia Agency License No. 244699; Agency NPN 22134534), a commercial lines specialty P&amp;C and consulting firm founded by Frank A. Quinn. <strong>Wynd Realty</strong> (Georgia) and <strong>Easy Realty / Easy.Realty</strong> (Florida) are independent real estate brokerages that are not owned by, controlled by, or affiliated with Quinn Alliance LLC; Frank A. Quinn is independently licensed under each brokerage. Listing those affiliations on this page does not create any partnership, joint venture, or shared liability among the entities.</p>
+
+      <p><strong>No concurrent representation — ever.</strong> Frank A. Quinn does not engage in concurrent representation of any kind, at any time, in any matter — even where applicable rules might otherwise permit it. He will not represent both sides of any claim, transaction, or engagement.</p>
+
+      <p><strong>Insurance services</strong> are offered through Quinn Alliance LLC. Frank A. Quinn is licensed in Georgia as a P&amp;C Agent, Adjuster, and Public Adjuster (License No. 3584949; NPN 20590121) and holds non-resident independent adjuster licenses in Florida (No. W949451), Texas (No. 2955794), and New York (No. IA-1774928). Home inspection services, where offered, are limited to the State of Georgia.</p>
+
+      <p><strong>Real estate services in Georgia</strong>, including any Broker Price Opinions and Comparative Market Analyses described on this site, are performed under the supervision of <strong>Wynd Realty</strong> pursuant to Georgia Real Estate Broker License No. 391429. <strong>Real estate services in Florida</strong> are performed under the supervision of <strong>Easy Realty (Easy.Realty)</strong> pursuant to Florida Real Estate Sales Associate License No. SL3245200. All real estate transactions, valuations, and advertising are governed by the policies, procedures, and supervision of the named brokerage. <span class="eho">Equal Housing</span> Equal housing opportunity — we do business in accordance with the Federal Fair Housing Act and applicable Georgia and Florida fair-housing laws.</p>
+
+      <p><strong>Broker Price Opinions and Comparative Market Analyses</strong> prepared on this site are not appraisals as defined by the Uniform Standards of Professional Appraisal Practice (USPAP) and are not intended for use in any federally related transaction in which a licensed or certified appraisal is required by law or regulation. <strong>Frank A. Quinn is not a state-licensed or state-certified fee appraiser</strong>, and nothing on this site offers, implies, or should be construed as a USPAP-compliant appraisal or as a private appraisal service. Real property appraisal experience referenced on this site reflects work performed in a separate, government-employed capacity; it informs inspection and valuation reasoning but creates no appraiser-client relationship.</p>
+
+      <p><strong>Property inspections</strong> referenced on this site are limited-scope visual surveys performed for the requesting party and the stated purpose only. Inspections are not warranties, guarantees, or insurance of property condition, code compliance, value, habitability, or insurability, and reports may not be relied upon by third parties without written consent.</p>
+
+      <p><strong>Proprietary tools</strong> described on this site are provided to Quinn Alliance clients as a value-added service. Tools described as "Coming Soon" or in development do not constitute a commitment to specific launch dates, features, pricing, or availability, and may be modified or withdrawn at any time. Complimentary risk reviews are educational and require no purchase or commitment.</p>
+
+      <p><strong>Verification.</strong> License numbers shown on this site are accurate as of the date of last review. Current licensure standing may be independently verified through the Georgia Office of Insurance and Safety Fire Commissioner, the Florida Department of Financial Services, the Florida Department of Business and Professional Regulation, the Texas Department of Insurance, the New York Department of Financial Services, the Georgia Real Estate Commission, and the NAIC's national producer database (NIPR).</p>
+
+      <p><strong>Trademarks &amp; third-party marks.</strong> Quinn Alliance is a mark of Frank A. Quinn or his affiliated entities. Wynd Realty and Easy Realty are independent brokerages and the property of their respective owners; references to those brokerages on this site identify the licensee's affiliation only.</p>
+
+      <p style="margin-top:18px;font-style:italic">If any statement on this site is inconsistent with applicable insurance, real estate, or adjuster advertising regulations in your jurisdiction, the regulation controls and the conflicting statement is withdrawn.</p>
+    </div>
+  </section>
+
+  <footer>
+    <span>© <span id="yr"></span> Frank A. Quinn · All rights reserved · <a href="#disclosures" style="color:inherit;text-decoration:underline;text-decoration-color:rgba(20,17,13,.25)">Disclosures</a></span>
+    <span class="marque">— frankaquinn.com —</span>
+    <span>Atlanta · Georgia · Florida</span>
+  </footer>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+
+    (function(){
+      var frame = document.getElementById('frame');
+      if(!frame) return;
+      var bg = getComputedStyle(frame).backgroundImage;
+      var match = bg && bg.match(/url\(["']?([^"')]+)["']?\)/);
+      if(!match) return;
+      var probe = new Image();
+      probe.onload = function(){ frame.setAttribute('data-loaded','true'); };
+      probe.onerror = function(){};
+      probe.src = match[1];
+    })();
+
+    if('IntersectionObserver' in window){
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(e){
+          if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+        });
+      },{rootMargin:'0px 0px -8% 0px',threshold:.08});
+      document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+    } else {
+      document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
+    }
+  </script>
+</body>
+</html>
